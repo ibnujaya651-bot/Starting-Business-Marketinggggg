@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Starting Business Digital Marketing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Starting Business Digital Marketing</h1>
+  <p>Website Produk Digital untuk Membantu Bisnis Pemula</p>
+</header>
+
+<!-- LOGIN -->
+<div id="loginBox" class="login-box">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <p id="error"></p>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="container hidden">
+
+  <h2>Daftar Produk Digital</h2>
+  <p>Gunakan kolom pencarian untuk menemukan produk digital yang Anda butuhkan.</p>
+
+  <!-- SEARCH -->
+  <input type="text" id="searchInput" placeholder="Cari produk digital..." onkeyup="searchProduct()">
+
+  <!-- PRODUK -->
+  <div class="cards">
+
+    <!-- 18 PRODUK -->
+    <div class="card" onclick="showDetail(1)"><h3>E-Book Digital Marketing</h3></div>
+    <div class="card" onclick="showDetail(2)"><h3>Template Konten Instagram</h3></div>
+    <div class="card" onclick="showDetail(3)"><h3>Kelas Online Marketing</h3></div>
+    <div class="card" onclick="showDetail(4)"><h3>Template Feed UMKM</h3></div>
+    <div class="card" onclick="showDetail(5)"><h3>Template Story Instagram</h3></div>
+    <div class="card" onclick="showDetail(6)"><h3>E-Book Bisnis Pemula</h3></div>
+    <div class="card" onclick="showDetail(7)"><h3>Paket Iklan Facebook</h3></div>
+    <div class="card" onclick="showDetail(8)"><h3>Paket Iklan Instagram</h3></div>
+    <div class="card" onclick="showDetail(9)"><h3>Template Landing Page</h3></div>
+    <div class="card" onclick="showDetail(10)"><h3>Template Copywriting</h3></div>
+    <div class="card" onclick="showDetail(11)"><h3>Jasa Manajemen Sosmed</h3></div>
+    <div class="card" onclick="showDetail(12)"><h3>Desain Logo Bisnis</h3></div>
+    <div class="card" onclick="showDetail(13)"><h3>Template Proposal Bisnis</h3></div>
+    <div class="card" onclick="showDetail(14)"><h3>E-Book Branding</h3></div>
+    <div class="card" onclick="showDetail(15)"><h3>Kelas Ads Pemula</h3></div>
+    <div class="card" onclick="showDetail(16)"><h3>Template Kalender Konten</h3></div>
+    <div class="card" onclick="showDetail(17)"><h3>Template Analisis Pasar</h3></div>
+    <div class="card" onclick="showDetail(18)"><h3>Paket Konsultasi Digital</h3></div>
+
+  </div>
+
+  <!-- DETAIL PRODUK -->
+  <div id="detailBox" class="detail hidden">
+    <h2 id="detailTitle"></h2>
+    <p id="detailDesc"></p>
+    <p id="detailPrice"></p>
+    <button onclick="closeDetail()">Tutup</button>
+  </div>
+
+  <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<footer>
+  <p>© 2025 Starting Business Digital Marketing</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
